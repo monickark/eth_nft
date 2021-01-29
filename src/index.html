@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>NFT + DEFI ICO SALE</title>
+  
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="Slen Coin ICO">
+  <meta name="author" content="Slenex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+
+</head>
+
+<body>
+  <DIV class="banner-top">    
+    <p class="page-title">NFT + DEFI ICO SALE</p>
+    <p class="user-addr"></p>
+  </DIV>
+  <div class="container" >     
+      
+    <div class="row col-lg-8" >
+      <div class=" form-group row col-lg-12">
+         <button type="button" onClick="App.startIco(); return false;" class="btn btn-success btn-lg col-lg-2">START ICO</button>
+      </div>
+      <div class="form-group row col-lg-12">
+        <h3>BUY SLEN-RFT SHARES</h3>
+          <input id="share_amount" class="input-lg col-lg-5" type="text" name="share_amount" placeholder="Share Amount"/>
+          <input id="dai_amount" class="input-lg col-lg-5" type="text" name="dai_amount" placeholder="Dai Amount"/>
+            <button type="button" onClick="App.buyShares(); return false;" class="btn btn-warning btn-lg col-lg-2">Buy Shares</button>
+      </div>
+      <div class="row col-lg-12"></div>
+            <h3>SLEN-NFT-RFT DETAILS</h3>
+            <div class="totalsupply"></div>
+            <div class="icoSharePrice"></div>
+            <div class="icoShareSupply"></div>
+            <div class="icoEnd"></div>
+            <div class="nftId"></div>     
+      </div>      
+      <div class="row col-lg-4" >
+        <div class="row col-lg-12">
+          <h3>ADMIN</h3>
+          <div class="admin-address"></div>
+          <div class="slennftrft-admin"></div>
+          <div class="dai-admin"></div>
+          <div class="nft-admin"></div>
+        </div>
+        <div class="row col-lg-12">
+          <h3>BUYER 1</h3>
+          <div class="buyer1-address"></div>
+          <div class="slennftrft-buyer1"></div>
+          <div class="dai-buyer1"></div>
+          <div class="nft-buyer1"></div>
+        </div>
+        <div class="row col-lg-12">
+          <h3>BUYER 2</h3>
+          <div class="buyer2-address"></div>
+          <div class="slennftrft-buyer2"></div>
+          <div class="dai-buyer2"></div>
+          <div class="nft-buyer2"></div>
+        </div>
+      </div>
+     
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
